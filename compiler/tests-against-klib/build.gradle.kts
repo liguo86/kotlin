@@ -8,8 +8,8 @@ plugins {
 
 dependencies {
     compile(kotlinStdlib())
-    testCompile(projectTests(":compiler:visualizer"))
     testCompile(projectTests(":generators:test-generator"))
+    testCompile(projectTests(":compiler:tests-common"))
 }
 
 sourceSets {
